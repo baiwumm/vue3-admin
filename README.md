@@ -142,6 +142,13 @@ pnpm build
 2. 本项目仅供学习交流使用，请勿用于商业用途。
 3. 欢迎提交 [Issues](https://github.com/baiwumm/vue3-admin/issues) 和 [PR](https://github.com/baiwumm/vue3-admin/pulls)，一起完善本项目。
 
+## 特别声明
+**本项目 CDN 加速及安全防护由 Tencent EdgeOne 赞助**
+
+官网链接：[亚洲最佳CDN、边缘和安全解决方案 - Tencent EdgeOne](https://edgeone.ai/zh?from=github)
+
+<img alt="EdgeOne" src="./EdgeOne.png"/>
+
 ## ⭐ Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=baiwumm/vue3-admin&type=Date)](https://star-history.com/#baiwumm/vue3-admin&Date)
