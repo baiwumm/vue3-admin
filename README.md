@@ -1,154 +1,178 @@
-<p align="center"><img width="100" src="./web/public/logo.png" alt="Vue3 Admin"></p>
-<h1 align="center">Vue3 Admin</h1>
-<p align="center">前端的全栈之路</p>
+<div align="center">
+	<img src="./public/favicon.svg" width="160" />
+	<h1>SoybeanAdmin</h1>
+  <span>English | <a href="./README.zh_CN.md">中文</a></span>
+</div>
 
-## ☘️ 项目简介
-[Vue3 Admin](https://vue3.baiwumm.com/) 是一个前端基于 [Soybean Admin](https://docs.soybeanjs.cn/) 二次开发，后端基于 [Nest.js](https://nestjs.com/) 的全栈后台应用，适合学习全栈开发的同学参考学习。
+---
 
-- 🍁 前端技术栈： [Vue3.5](https://cn.vuejs.org/)、[Ant Design Vue](https://www.antdv.com/)、[UnoCSS](https://unocss.dev/)、[Pinia](https://pinia.vuejs.org/)
+[![license](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
+[![github stars](https://img.shields.io/github/stars/soybeanjs/soybean-admin)](https://github.com/soybeanjs/soybean-admin)
+[![github forks](https://img.shields.io/github/forks/soybeanjs/soybean-admin)](https://github.com/soybeanjs/soybean-admin)
+[![gitee stars](https://gitee.com/honghuangdc/soybean-admin/badge/star.svg)](https://gitee.com/honghuangdc/soybean-admin)
+
+<a href="https://hellogithub.com/repository/1298f27d5fe54959a16cf9686516ddb3" target="_blank"><img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=1298f27d5fe54959a16cf9686516ddb3&claim_uid=IiDXWmP4TEntjbV" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
+> [!NOTE]
+> If you think `SoybeanAdmin` is helpful to you, or you like our project, please give us a ⭐️ on GitHub. Your support is the driving force for us to continue to improve and add new features! Thank you for your support!
+
+## Introduction
+
+[`SoybeanAdmin`](https://github.com/soybeanjs/soybean-admin) is a clean, elegant, beautiful and powerful admin template, based on the latest front-end technology stack, including Vue3, Vite5, TypeScript, Pinia and UnoCSS. It has built-in rich theme configuration and components, strict code specifications, and an automated file routing system. In addition, it also uses the online mock data solution based on ApiFox. `SoybeanAdmin` provides you with a one-stop admin solution, no additional configuration, and out of the box. It is also a best practice for learning cutting-edge technologies quickly.
 
 
-- 🍁 后端技术栈： [Nest.js](https://nestjs.com/)、[PostgreSQL](https://www.postgresql.org/)、[Prisma](https://prisma.yoga/)
+## Features
 
-- 🍂 线上预览： https://vue3.baiwumm.com/
+- **Cutting-edge technology application**: using the latest popular technology stack such as Vue3, Vite5, TypeScript, Pinia and UnoCSS.
+- **Clear project architecture**: using pnpm monorepo architecture, clear structure, elegant and easy to understand.
+- **Strict code specifications**: follow the [SoybeanJS specification](https://docs.soybeanjs.cn/standard), integrate eslint, prettier and simple-git-hooks to ensure the code is standardized.
+- **TypeScript**: support strict type checking to improve code maintainability.
+- **Rich theme configuration**: built-in a variety of theme configurations, perfectly integrated with UnoCSS.
+- **Built-in internationalization solution**: easily realize multi-language support.
+- **Automated file routing system**: automatically generate route import, declaration and type. For more details, please refer to [Elegant Router](https://github.com/soybeanjs/elegant-router).
+- **Flexible permission routing**: support both front-end static routing and back-end dynamic routing.
+- **Rich page components**: built-in a variety of pages and components, including 403, 404, 500 pages, as well as layout components, tag components, theme configuration components, etc.
+- **Command line tool**: built-in efficient command line tool, git commit, delete file, release, etc.
+- **Mobile adaptation**: perfectly support mobile terminal to realize adaptive layout.
 
-- 🍃 用户名：**Admin**，密码：**abc123456**
 
-- [🪹 github 仓库地址](https://github.com/baiwumm/vue3-admin/)
+## Version
 
-- [🪺 码云仓库地址](https://gitee.com/baiwumm/vue3-admin/)
+- **NaiveUI Version:**
+  - [Preview Link](https://naive.soybeanjs.cn/)
+  - [Github Repository](https://github.com/soybeanjs/soybean-admin)
+  - [Gitee Repository](https://gitee.com/honghuangdc/soybean-admin)
 
-- [🍀 Swagger 接口文档](https://vue3.baiwumm.com/docs)
+- **AntDesignVue Version:**
+  - [Preview Link](https://antd.soybeanjs.cn/)
+  - [Github Repository](https://github.com/soybeanjs/soybean-admin-antd)
+  - [Gitee Repository](https://gitee.com/honghuangdc/soybean-admin-antd)
 
-- ❤️ star：**如果可以的话，请顺手给个star，表示对作者的鼓励，万分感谢！**
+- **Legacy Version:**
+  - [Preview Link](https://legacy.soybeanjs.cn/)
+  - [Github Repository](https://github.com/soybeanjs/soybean-admin/tree/legacy)
 
-## 🌿 系统功能设计
-1. 动态国际化语言配置
-2. 记录登录用户的 `CURD` 操作日志
-3. 用户和角色权限的一对一映射，根据角色关联的菜单权限生成动态路由菜单
-4. 登录用户发布消息公告，后端使用 `SSE` 推送，可登录多个用户查看效果
-5. 前端常见的一些实用的业务功能或者一些有趣的效果
 
-## 🌳 环境和依赖
-> 推荐本项目使用 [pnpm](https://github.com/pnpm/pnpm/) 包管理工具
-- [Git](https://git-scm.com/) (你需要git来克隆和管理项目版本)
-- [Node.js](https://nodejs.org/) (Node.js 版本要求 >= 18.12.0，推荐 18.19.0 或更高)
-- [Pnpm](https://github.com/pnpm/pnpm/) (>= 8.7.0，推荐最新版本)
-- [PostgreSQL](https://www.postgresql.org/) (推荐最新版本)
+## Documentation
 
-## 🌴 项目运行
-1. 安装 [PostgreSQL](https://www.postgresql.org/) 数据库，并导入 `/postgreSQL` 中的文件，修改 `/server/env` 文件中的数据库配置，这一步要保证成功，不然后端服务起不来
-```powershell
-DATABASE_URL="postgresql://postgres:123456@localhost:5432/vue3-admin?schema=public"
+- [Link](https://docs.soybeanjs.cn)
+- [Legacy Docs](https://legacy-docs.soybeanjs.cn)
+
+## Example Images
+
+![](https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/uPic/soybean-admin-v1-01.png)
+![](https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/uPic/soybean-admin-v1-02.png)
+![](https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/uPic/soybean-admin-v1-03.png)
+![](https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/uPic/soybean-admin-v1-04.png)
+![](https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/uPic/soybean-admin-v1-05.png)
+![](https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/uPic/soybean-admin-v1-06.png)
+![](https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/uPic/soybean-admin-v1-07.png)
+![](https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/uPic/soybean-admin-v1-08.png)
+![](https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/uPic/soybean-admin-v1-09.png)
+![](https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/uPic/soybean-admin-v1-10.png)
+![](https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/uPic/soybean-admin-v1-mobile.png)
+
+
+## Usage
+
+**Environment Preparation**
+
+Make sure your environment meets the following requirements:
+
+- **git**: you need git to clone and manage project versions.
+- **NodeJS**: >=18.12.0, recommended 18.19.0 or higher.
+- **pnpm**: >= 8.7.0, recommended 8.14.0 or higher.
+
+**Clone Project**
+
+```bash
+git clone https://github.com/soybeanjs/soybean-admin.git
 ```
 
-2. 拉取项目代码
-```powershell
-git clone https://github.com/baiwumm/vue3-admin.git
-cd vue3-admin
-// 进入前端
-cd web
-// 进入后端
-cd server
-```
+**Install Dependencies**
 
-3. 安装依赖
-```powershell
-npm install -g pnpm
-pnpm install
+```bash
+pnpm i
 ```
+> Since this project uses the pnpm monorepo management method, please do not use npm or yarn to install dependencies.
 
-4. 开发模式运行
-```powershell
-// 前端启动
+**Start Project**
+
+```bash
 pnpm dev
-// 后端启动：开发模式
-pnpm start:dev
 ```
 
-5. 编译项目
-```powershell
+**Build Project**
+
+```bash
 pnpm build
 ```
 
-## 🌵 新增路由菜单
-1. 在 `web/src/views` 目录下新建 `文件夹/index.vue` 文件
-2. 在菜单 `系统管理-国际化-route` 中添加路由配置
-3. 在菜单 `系统管理-菜单管理` 中按照规则添加菜单，可打开多个标签页参考，路由配置参考：[系统路由](https://docs.soybeanjs.cn/zh/guide/router/intro.html)
-4. 在菜单 `系统管理-角色管理` 中编辑状态中勾选相应的菜单，保存刷新页面，即可看到路由菜单生效
+## Ecosystem
 
-## 🌱 功能模块
+- [electron-mock-admin](https://github.com/lixin59/electron-mock-api): A Mock Api management system that helps front-end developers quickly implement interface mocks.
+- [T-Shell](https://github.com/TheBlindM/T-Shell): A terminal emulator and SSH client with configurable command prompts.
+- [pea](https://github.com/haitang1894/pea) : Adopting SpringBoot3.2 + JDK21, MyBatis-Plus, SpringSecurity security framework, etc., suitable for the simple permission system developed by [soybean-admin](https://gitee.com/honghuangdc/soybean-admin).
+- [MalusAdmin](https://github.com/pridejoy/MalusAdmin): A backend management framework developed based on Vue3/TypeScript/NaiveUI and NET7 & Sqlsugar. It is implemented in the most original and simplest way, with a fresh and elegant front-end, a clear and elegant backend structure, and powerful functions.
+- [PanisAdmin](https://github.com/paynezhuang/panis-admin): Adopting SpringBoot 3, SaToken, MySQL and other frameworks to develop and modify [soybean-admin](https://github.com/soybeanjs/soybean-admin) for the second time, adapting dynamic menu/button-level authorization. Retaining the original flavor, fresh and elegant, high-value back-end management system scaffold.
+- [snail-job](https://github.com/aizuda/snail-job): A distributed task retry and task scheduling platform with "high performance, high value and high activity".
+- [SuperApi](https://github.com/TmmTop/SuperApi): Quickly turn your idea into an online stable product! Entity-less library and table building, add, delete, change and check entity-less library table, support 15 kinds of condition query, as well as paging, list, unlimited tree list and other functions of the API deployment! With interface documentation, Auth authorisation, interface flow restriction, access to the client's real IP, advanced server caching components, dynamic APIs and other features, we look forward to your experience!
+- [FastSoyAdmin](https://github.com/sleep1223/fast-soy-admin): A modern Management Platform based on FastAPI+Vue3+Naive UI.
 
-```
-- 登录 / 注销
 
-- 首页
+## How to Contribute
 
-- 智能行政
-  - 消息公告
-  - 组织管理
-  - 岗位管理
-  - 组织架构
+We warmly welcome and appreciate all forms of contributions. If you have any ideas or suggestions, please feel free to share them by submitting [pull requests](https://github.com/soybeanjs/soybean-admin/pulls) or creating GitHub [issue](https://github.com/soybeanjs/soybean-admin/issues/new).
 
-- 个人中心
+## Git Commit Guidelines
 
-- 功能页
-  - 验证码
-  - 打印
-  - 拾色器
-  - 甘特图
-  - 图片预览
-  - 自定义 Vue 指令
-  - 懒加载
-  - 图片取色盘
-  - 系统级取色器
-  - 文件预览
-  - 流程图
-  - 瀑布流
-  - Swiper
+This project has built-in `commit` command, you can execute `pnpm commit` to generate commit information that conforms to [Conventional Commits](https://www.conventionalcommits.org/) specification. When submitting PR, please be sure to use `commit` command to create commit information to ensure the standardization of information.
 
-- 技术文档
-  - Soybean（内链）
-  - Vue3
-  - Nest.js
-  - Ant Design Vue
-  - UnoCSS
+## Browser Support
 
-- 系统设置
-  - 用户管理
-  - 菜单管理
-  - 角色管理
-  - 国际化
-  - 操作日志
+It is recommended to use the latest version of Chrome in development for a better experience.
 
-- 关于
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png" alt="IE" width="24px" height="24px"  />](http://godban.github.io/browsers-support-badges/) | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/) | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/) | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/) | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/) |
+| --- | --- | --- | --- | --- |
+| not support | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
 
-```
+## OpenSource Author
 
-## 🪴 演示图
+[Soybean](https://github.com/honghuangdc)
 
-| ![](./web/src/assets/demo/1.jpg) | ![](./web/src/assets/demo/2.jpg) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![](./web/src/assets/demo/3.jpg) | ![](./web/src/assets/demo/4.png) |
-| ![](./web/src/assets/demo/5.jpg) | ![](./web/src/assets/demo/6.jpg) |
-| ![](./web/src/assets/demo/7.jpg) | ![](./web/src/assets/demo/8.jpg) |
-| ![](./web/src/assets/demo/9.jpg) | ![](./web/src/assets/demo/10.jpg) |
-| ![](./web/src/assets/demo/11.jpg) | ![](./web/src/assets/demo/12.jpg) |
-| ![](./web/src/assets/demo/13.jpg) | ![](./web/src/assets/demo/14.jpg) |
-| ![](./web/src/assets/demo/15.jpg) | ![](./web/src/assets/demo/16.jpg) |
+## Contributors
 
-## 🍄 总结
-1. 本项目没有经过严格的测试，有可能存在一定的 `Bug`。
-2. 本项目仅供学习交流使用，请勿用于商业用途。
-3. 欢迎提交 [Issues](https://github.com/baiwumm/vue3-admin/issues) 和 [PR](https://github.com/baiwumm/vue3-admin/pulls)，一起完善本项目。
+Thanks the following people for their contributions. If you want to contribute to this project, please refer to [How to Contribute](#how-to-contribute).
 
-## 特别声明
-**本项目 CDN 加速及安全防护由 Tencent EdgeOne 赞助**
+<a href="https://github.com/soybeanjs/soybean-admin/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=soybeanjs/soybean-admin" />
+</a>
 
-官网链接：[亚洲最佳CDN、边缘和安全解决方案 - Tencent EdgeOne](https://edgeone.ai/zh?from=github)
+## Communication
 
-<img alt="EdgeOne" src="./EdgeOne.png"/>
+`SoybeanAdmin` is a completely open source and free project, helping developers to develop medium and large-scale management systems more conveniently. It also provides WeChat and QQ communication groups. If you have any questions, please feel free to ask in the group.
 
-## ⭐ Star History
+  <div>
+  	<p>QQ Group</p>
+    <img src="https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/uPic/qq-soybean-admin-2.jpg" style="width:200px" />
+  </div>
+	<!-- <div>
+		<p>WeChat Group</p>
+		<img src="https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/picgo/soybean-admin-wechat-0620.jpg" style="width:200px" />
+	</div> -->
+	<div>
+		<p>Add the following WeChat to invite to the WeChat group</p>
+		<img src="https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/uPic/wechat-soybeanjs.jpg" style="width:200px" />
+	</div>
+  <div>
+    <p>Add Soybean's WeChat for business consultation, cooperation, project architecture, one-on-one guidance, etc.</p>
+    <img src="https://soybeanjs-1300612522.cos.ap-guangzhou.myqcloud.com/uPic/wechat-soybean.jpg" style="width:200px" />
+  </div>
 
-[![Star History Chart](https://api.star-history.com/svg?repos=baiwumm/vue3-admin&type=Date)](https://star-history.com/#baiwumm/vue3-admin&Date)
+## Star Trend
+
+[![Star History Chart](https://api.star-history.com/svg?repos=soybeanjs/soybean-admin&type=Date)](https://star-history.com/#soybeanjs/soybean-admin&Date)
+
+## License
+
+This project is based on the [MIT © 2021 Soybean](./LICENSE) protocol, for learning purposes only, please retain the author's copyright information for commercial use, the author does not guarantee and is not responsible for the software.
