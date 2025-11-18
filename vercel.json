@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://vue3-admin.onrender.com/:path*"
+    },
+    {
+      "source": "/docs/:path*",
+      "destination": "https://vue3-admin.onrender.com/docs/:path*"
+    },
+    {
+      "source": "/static/:path*",
+      "destination": "https://vue3-admin.onrender.com/static/:path*"
+    }
+  ]
+}
