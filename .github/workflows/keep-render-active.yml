@@ -3,6 +3,7 @@ name: Keep Render Service Active
 on:
   schedule:
     - cron: '0 0 1 * *'  # 每月1号
+  workflow_dispatch:       # 👈 关键！允许手动触发 
 jobs:
   keep-alive:
     runs-on: ubuntu-latest
