@@ -55,6 +55,7 @@
     "@sa/materials": "workspace:*",
     "@sa/utils": "workspace:*",
     "@simonwep/pickr": "1.9.1",
+    "@vercel/analytics": "^1.5.0",
     "@vue-flow/background": "^1.3.2",
     "@vue-flow/controls": "^1.1.2",
     "@vue-flow/core": "^1.45.0",

@@ -2,7 +2,7 @@ import './plugins/assets';
 
 import { createApp } from 'vue';
 import { printPlugin } from 'vue-print-next';
-
+import { inject } from '@vercel/analytics'
 import { setupGlobDirectives } from '@/directives';
 
 import App from './App.vue';
@@ -12,6 +12,10 @@ import { setupRouter } from './router';
 import { setupStore } from './store';
 
 async function setupApp() {
+
+  // Vercel 统计
+  inject();
+
   setupLoading();
 
   setupNProgress();
